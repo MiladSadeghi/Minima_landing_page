@@ -48,6 +48,7 @@ ul {
 
 .nav .list {
   display: flex;
+  flex-direction: row;
 }
 
 .nav .list ul {
@@ -92,7 +93,7 @@ ul {
   font-size: 16px;
 }
 
-.nav .list button {
+.nav div button {
   cursor: pointer;
   background: #121212;
   color: #FAFAFA;
@@ -109,31 +110,118 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
-  
+  .container {
+    width: 1124px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  
+  .container {
+    width: 950px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  
+  .container {
+    width: 800px;
+  }
+  .nav .logo img {
+    width: 40px;
+  }
+  .nav .logo h1 {
+    font-size: 16px;
+  }
+  .nav .list ul li {
+    margin: 0 10px;
+  }
+  .nav .list ul li a {
+    font-size: 14px;
+  }
+  .nav div button {
+    padding: 6px 18px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .container {
+    width: 700px;
+  }
+  .nav div button {
+    padding: 5px 10px;
+    margin-left: 0px;
+    font-size: 11px;
+  }
+  .nav .list ul li a {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  
+  .container {
+    width: 520px;
+  }
+  .nav {
+    justify-content: space-between;
+    position: relative;
+  }
+  .nav .list {
+    position: absolute;
+    justify-content: center;
+    left: 50%;
+    top: 80px;
+    width: 100%;
+    border: 1px solid #000;
+    transform: translateX(-50%);
+  }
+  .nav .list ul {
+    flex-direction: column;
+  }
+  .nav .list ul li {
+    margin: 10px 0px;
+  }
+  .nav .list ul li:hover::after {
+    opacity: 0;
+  }
+  .nav div button {
+    padding: 8px 10px;
+    margin-left: -85px;
+    font-size: 15px;
+  }
+  .nav .humb-menu {
+    display: block;
+    color: #000;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+  .nav .logo h1 {
+    display: none;
+  }
+  .nav div button {
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {
+    width: 310px;
+  }
   
 }
 
 @media only screen and (max-width: 320px) {
-  
+  .container {
+    width: 280px;
+  }
 }
 
 
