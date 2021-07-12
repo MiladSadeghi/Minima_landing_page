@@ -124,13 +124,15 @@ ul {
 .hero .hero-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .hero .hero-content .hero-content-text {
       display: flex;
     flex-direction: column;
     color: #FAFAFA;
-    width: 43%;
+    width: 100%;
     margin-top: 47px;
 }
 
@@ -138,7 +140,7 @@ ul {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  width: 89%;
+  width: 85%;
 }
 
 .hero .hero-content .hero-content-text h1 span {
@@ -150,7 +152,7 @@ ul {
   font-size: 16px;
   font-weight: 200;
   line-height: 22px;
-  width: 83.5%;
+  width: 71.5%;
   margin: 30px 0;
 }
 
@@ -192,7 +194,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 73%;
   position: relative;
   margin-top: 15px
 }
@@ -225,6 +227,82 @@ ul {
   padding: 25px 29.5px;
 }
 
+.hero .hero-content .hero-content-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.hero .hero-content .hero-content-photo img{
+  width: 277px;
+  z-index: 2;
+}
+
+.hero .hero-content .circle {
+  content: '';
+  position: absolute;
+  border: 1px solid #FCED65;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  opacity: 0.5;
+  left: 180px;
+  top: 0;
+  animation: spinAround-inverse 5s linear infinite;
+}
+
+.hero .hero-content .circle-yellow {
+  content: '';
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-color: #fdec57;
+  border-radius: 50%;
+  top: 248px;
+  left: 112px;
+  animation: spinAround 5s linear infinite;
+}
+
+.hero .hero-content .circle-gredient {
+  content: '';
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  top: 447px;
+  left: 313px;
+  background: linear-gradient(180deg, #DEDEDE 38.54%, rgba(222, 222, 222, 0) 100%);
+  animation: oneLine 5s linear infinite alternate;
+}
+
+@keyframes spinAround-inverse {
+  from {
+    transform: rotate(360deg) translate(10px);
+  }
+  to {
+    transform: rotate(0deg) translate(10px);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg) translate(90px);
+  }
+  to {
+    transform: rotate(360deg) translate(90px);
+  }
+}
+
+@keyframes oneLine {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-175px);
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .container {
