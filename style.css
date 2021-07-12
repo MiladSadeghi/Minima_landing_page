@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --translate-circle-normal: 10px;
+  --translate-circle-Yellow: 90px;
+  --translate-circle-Gradient: -175px;
+}
+
 /* global */
 body {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +26,7 @@ ul {
 }
 
 .container {
+  display: flex;
   width: 1100px;
   margin: 0 auto;
   justify-content: center;
@@ -29,10 +36,14 @@ ul {
 /* nav */
 .nav {
   display: flex;
-  width: 1050px;
   height: 80px;
   margin: 0 auto;
-  align-items: center;
+  background: #fff;
+  position: relative;
+}
+
+.nav .container {
+  width: 1050px;
   justify-content: space-between;
 }
 
@@ -116,9 +127,18 @@ ul {
 
 .hero {
   height: 87.4vh;
-  background: #121212;
   display: flex;
   align-items: center;
+}
+
+.hero .bg {
+  position: absolute;
+  background: #121212;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .hero .hero-content {
@@ -126,6 +146,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  z-index: 2;
 }
 
 .hero .hero-content .hero-content-text {
@@ -196,12 +217,13 @@ ul {
   align-items: center;
   width: 73%;
   position: relative;
-  margin-top: 15px
+  margin-top: 15px;
 }
 
 .hero .hero-content .hero-content-text .bottom .bottom-bottom::before {
   content: '';
   position: absolute;
+  display: block;
   left: 0;
   bottom: 2px;
   height: 100%;
@@ -243,6 +265,7 @@ ul {
 .hero .hero-content .circle {
   content: '';
   position: absolute;
+  overflow: hidden;
   border: 1px solid #FCED65;
   border-radius: 50%;
   width: 350px;
@@ -255,6 +278,7 @@ ul {
 
 .hero .hero-content .circle-yellow {
   content: '';
+  overflow: hidden;
   position: absolute;
   width: 61px;
   height: 61px;
@@ -267,6 +291,7 @@ ul {
 
 .hero .hero-content .circle-gredient {
   content: '';
+  overflow: hidden;
   position: absolute;
   width: 61px;
   height: 61px;
@@ -279,19 +304,19 @@ ul {
 
 @keyframes spinAround-inverse {
   from {
-    transform: rotate(360deg) translate(10px);
+    transform: rotate(360deg) translate(var(--translate-circle-normal));
   }
   to {
-    transform: rotate(0deg) translate(10px);
+    transform: rotate(0deg) translate(var(--translate-circle-normal));
   }
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg) translate(90px);
+    transform: rotate(0deg) translate(var(--translate-circle-Yellow));
   }
   to {
-    transform: rotate(360deg) translate(90px);
+    transform: rotate(360deg) translate(var(--translate-circle-Yellow));
   }
 }
 
@@ -300,7 +325,7 @@ ul {
     transform: translate(0);
   }
   to {
-    transform: translate(-175px);
+    transform: translate(var(--translate-circle-Gradient));
   }
 }
 
@@ -311,14 +336,53 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
+  :root {
+    --translate-circle-Yellow: 75px;
+  }
   .container {
     width: 950px;
+  }
+  .nav .container {
+    width: 920px;
+  }
+  .nav .list {
+    margin-left: 45px;
+  }
+  .nav .list ul li {
+    margin: 0px 10px;
+  } 
+  .nav .list ul li a {
+    font-size: 18px;
+  }
+  .hero .hero-content .hero-content-text h3 {
+    width: 82.7%;
+    font-size: 16px;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-top h5 {
+    font-size: 18px;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-bottom .second {
+    margin: 0 20px;
+  }
+  .hero .hero-content .circle {
+    width: 235px;
+    height: 235px;
+    left: 183px;
+  }
+  .hero .hero-content .circle-gredient {
+    top: 460px;
   }
 }
 
 @media only screen and (max-width: 900px) {
+  :root {
+    --translate-circle-Yellow: 89px;
+  }
   .container {
     width: 800px;
+  }
+  .nav .container {
+    width: 760px;
   }
   .nav .logo img {
     width: 40px;
@@ -327,13 +391,31 @@ ul {
     font-size: 16px;
   }
   .nav .list ul li {
-    margin: 0 10px;
+    margin: 0 8px;
   }
   .nav .list ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .nav div button {
     padding: 6px 18px;
+  }
+  .hero .hero-content .hero-content-text h1 {
+    width: 95%;
+  }
+  .hero .hero-content .hero-content-text h3 {
+    width: 97%;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-top {
+    width: 40%;
+  }
+  .hero .hero-content .circle {
+    width: 220px;
+    height: 220px;
+    left: 150px;
+  }
+  .hero .hero-content .circle-gredient {
+    top: 472px;
+    left: 243px;
   }
 }
 
@@ -341,14 +423,30 @@ ul {
   .container {
     width: 700px;
   }
+  .nav .container {
+    width: 660px;
+  }
   .nav div button {
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin-left: 0px;
-    font-size: 11px;
+    font-size: 14px;
+  }
+  .nav .list {
+    margin-left: 30px;
+  }
+  .nav .list ul li {
+    margin: 0 5px;
   }
   .nav .list ul li a {
-    font-size: 12px;
+    font-size: 14px;
   }
+  .circle, .circle-yellow, .circle-gredient {
+    display: none;
+  }
+  .hero .hero-content .hero-content-photo {
+    width: auto;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -359,15 +457,25 @@ ul {
     justify-content: space-between;
     position: relative;
   }
+  .nav .container {
+    width: 470px;
+  }
+  .nav .logo h1 {
+    display: none;
+  }
+  .nav .logo img {
+    width: 55px;
+  }
   .nav .list {
     position: absolute;
     justify-content: center;
-    left: 50%;
+    left: 45%;
     top: 80px;
-    width: 100%;
+    width: 90%;
     border: 1px solid #000;
     transform: translateX(-50%);
     background: #fff;
+    z-index: 10;
   }
   .nav .list ul {
     flex-direction: column;
@@ -375,29 +483,80 @@ ul {
   .nav .list ul li {
     margin: 10px 0px;
   }
+  .nav .list ul li a {
+    font-size: 18px;
+    padding: 15px 0;
+  }
   .nav .list ul li:hover::after {
     opacity: 0;
   }
   .nav div button {
-    padding: 8px 10px;
-    margin-left: -85px;
+    padding: 10px 20px;
+    margin-left: -35px;
     font-size: 15px;
   }
   .nav .humb-menu {
     display: block;
     color: #000;
+    font-size: 22px;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero .bg {
+    height: 127vh;
+  }
+  .hero .hero-content {
+    flex-direction: column-reverse;
+  }
+  .hero .hero-content .hero-content-text {
+    margin-top: 10px;
+  }
+  .hero .hero-content .hero-content-text h3 {
+    font-size: 18px;
+  }
+  .hero .hero-content .hero-content-photo img {
+    width: 250px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 450px;
+    width: 430px;
   }
+  .nav .container {
+    width: 400px;
+  }
+  .nav .list {
+    left: 44%;
+    top: 90px;
+    width: 90%;
+  }
+  .nav div button {
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-left: -24px;
+  }
+  .hero .bg {
+    height: 134vh;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
   .container {
     width: 350px;
+  }
+  .nav .container {
+    width: 320px;
+  }
+  .nav .list {
+    left: 43%;
+    top: 90px;
+    width: 90%;
+  }
+  .hero .bg {
+    height: 100vh;
   }
   .nav .logo h1 {
     display: none;
@@ -405,18 +564,54 @@ ul {
   .nav div button {
     margin-left: -30px;
   }
+  .hero .hero-content .hero-content-text .bottom .bottom-bottom {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-bottom .second {
+    margin: 10px 0;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-bottom::before {
+    display: none;
+  }
+  .hero .hero-content .hero-content-photo img {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 350px) {
   .container {
     width: 310px;
   }
-  
+  .nav .list {
+    left: 42%;
+    top: 90px;
+    width: 90%;
+  }
+  .hero .bg {
+    height: 110vh;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-top {
+    width: 50%;
+  }
+  .hero .hero-content .hero-content-text .bottom .bottom-top i{
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .container {
     width: 280px;
+  }
+  .nav .container {
+    width: 260px;
+  }
+  .hero .bg {
+    height: 115vh;
+  }
+  .hero .hero-content .hero-content-text h1 {
+    width: 75%;
   }
 }
 
