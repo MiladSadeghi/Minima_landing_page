@@ -651,6 +651,70 @@ ul {
   color: #333333;
 }
 
+.customer-says {
+  padding: 80px 0;
+}
+
+.customer-says .customer-says-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-says .customer-says-content .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.customer-says .customer-says-content .top h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.customer-says .customer-says-content .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-says .customer-says-content .bottom .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.customer-says .customer-says-content .bottom .middle p {
+  font-size: 17px;
+  font-weight: 300;
+  width: 56.4%;
+  color: #666666;
+  margin: 54px 0 30px;
+  line-height: 28px;
+}
+
+.customer-says .customer-says-content .bottom .middle h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D1D1D;
+  line-height: 41px;
+}
+
+.customer-says .customer-says-content .bottom .middle h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+.customer-says .customer-says-content .bottom .cursor {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1124px;
@@ -813,6 +877,9 @@ ul {
     grid-row-start: 20;
     grid-row-end: 34;
   }
+  .customer-says .customer-says-content .bottom .middle p {
+    width: 66.4%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -943,6 +1010,9 @@ ul {
     grid-row-start: 10;
     grid-row-end: 19;
   }
+  .customer-says .customer-says-content .bottom .middle p {
+    width: 80.4%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1030,6 +1100,10 @@ ul {
   .our-team .our-team-content .team {
     column-gap: 19px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .customer-says .customer-says-content .bottom .middle p {
+    width: 92.4%;
+    font-size: 16px;
   }
 }
 
@@ -1167,6 +1241,10 @@ ul {
   .our-success .our-success-content .content-right .second {
     margin: 0px 25px;
   }
+  .customer-says .customer-says-content .bottom .middle p {
+    width: 87.1%;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1210,6 +1288,12 @@ ul {
   .our-team .our-team-content .team .person img {
     width: 220px;
     height: 220px;
+  }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 39px;
+  }
+  .customer-says .customer-says-content .bottom .middle h5 {
+    font-size: 20px;
   }
 }
 
@@ -1271,6 +1355,12 @@ ul {
   .our-team .our-team-content .team .person img {
     width: 190px;
     height: 190px;
+  }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 34px;
+  }
+  .customer-says .customer-says-content .bottom .cursor {
+    width: 45px;
   }
 }
 
@@ -1368,6 +1458,9 @@ ul {
     width: 250px;
     height: 250px;
   }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1391,6 +1484,9 @@ ul {
   }
   .our-team .our-team-content .text-content h2 {
     font-size: 36px;
+  }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 29px;
   }
 }
 
@@ -1458,6 +1554,12 @@ ul {
   .our-team .our-team-content .text-content h2 {
     font-size: 34px;
   }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 28px;
+  }
+  .customer-says .customer-says-content .bottom .cursor {
+    width: 40px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1510,6 +1612,9 @@ ul {
   }
   .our-team .our-team-content .text-content h2 {
     font-size: 31px;
+  }
+  .customer-says .customer-says-content .top h2 {
+    font-size: 25px;
   }
 }
 
