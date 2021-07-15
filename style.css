@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -15,9 +16,6 @@
 }
 
 /* global */
-body {
-  font-family: "Roboto", sans-serif;
-}
 a {
   text-decoration: none;
 }
@@ -715,6 +713,151 @@ ul {
   cursor: pointer;
 }
 
+.contact-us {
+  margin-bottom: 50px;
+}
+
+.contact-us .contact-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-us .contact-us-content .left-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-us .contact-us-content .left-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.contact-us .contact-us-content .left-content .form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us .contact-us-content .left-content .form label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4F4F4F;
+  line-height: 24px;
+}
+
+.contact-us .contact-us-content .left-content .form input {
+  border: none;
+  background-color: #ececec;
+  padding: 15px 13px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 95%;
+}
+
+.contact-us .contact-us-content .left-content .form input:focus {
+  outline: 1px solid #a8a8a8;
+  outline-style: auto;
+  border-radius: 8px;
+}
+
+.contact-us .contact-us-content .left-content .form input::placeholder {
+  color: #BDBDBD;
+}
+
+.contact-us .contact-us-content .left-content .form textarea {
+  width: 450px;
+  height: 135px;
+  resize: none;
+  background: #ececec;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.contact-us .contact-us-content .left-content .form textarea::placeholder {
+  color: #BDBDBD;
+  font-size: 16px;
+}
+
+.contact-us .contact-us-content .left-content .form textarea:focus {
+  outline: 1px solid #a8a8a8;
+  outline-style: auto;
+  border-radius: 8px;
+}
+
+.contact-us .contact-us-content .left-content .form .input-sec {
+  margin-bottom: 25px;
+}
+
+.contact-us .contact-us-content .left-content .form .color {
+  color: #666666;
+}
+
+.contact-us .contact-us-content .left-content .form .row {
+  display: flex;
+  width: 97.5%;
+  padding: 25px 0;
+}
+
+.contact-us .contact-us-content .left-content .form .row .row-c {
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us .contact-us-content .left-content .form .row .row-c label{
+  display: block;
+}
+
+.contact-us .contact-us-content .left-content .form .btn {
+  width: 100px;
+  height: 50px;
+  background: #1D1D1D;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-us .contact-us-content .right-content {
+  position: relative;
+}
+
+.contact-us .contact-us-content .right-content .img-2 {
+  position: absolute;
+  left: -47px;
+  bottom: -43px;
+  z-index: -1;
+}
+
+.contact-us .contact-us-content .right-content .text {
+  display: flex;
+  position: absolute;
+  align-items: start;
+  right: -18px;
+  bottom: -41px;
+  width: 41%;
+}
+
+.contact-us .contact-us-content .right-content .text p {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-left: 20px;
+}
+
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1124px;
@@ -764,6 +907,9 @@ ul {
   .dot1 {
     left: -49px;
     top: 421px;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 471px;
   }
 }
 
@@ -879,6 +1025,28 @@ ul {
   }
   .customer-says .customer-says-content .bottom .middle p {
     width: 66.4%;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 443px;
+  }
+  .contact-us .contact-us-content .left-content .form label {
+    font-size: 14px;
+  }
+  .contact-us .contact-us-content .left-content .form input {
+    font-size: 12px;
+  }
+  .contact-us .contact-us-content .right-content .img-1 {
+    width: 400px;
+  }
+  .contact-us .contact-us-content .right-content .img-2 {
+    left: -35px;
+    bottom: -31px;
+    width: 130px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    right: -5px;
+    bottom: -47px;
+    width: 52%;
   }
 }
 
@@ -1013,6 +1181,20 @@ ul {
   .customer-says .customer-says-content .bottom .middle p {
     width: 80.4%;
   }
+  .contact-us .contact-us-content .right-content .img-1 {
+    margin-bottom: 50px;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 323px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    right: -3px;
+    bottom: -1px;
+  }
+  .contact-us .contact-us-content .right-content .img-2 {
+    left: -35px;
+    bottom: 18px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1104,6 +1286,36 @@ ul {
   .customer-says .customer-says-content .bottom .middle p {
     width: 92.4%;
     font-size: 16px;
+  }
+  .contact-us .contact-us-content {
+    flex-direction: column-reverse;
+  }
+  .contact-us .contact-us-content .left-content {
+    align-items: center;
+  }
+  .contact-us .contact-us-content .left-content .form {
+    align-items: center;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 563px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    bottom: 0;
+  }
+  .contact-us .contact-us-content .right-content .img-2 {
+    bottom: 19px;
+  }
+  .contact-us .contact-us-content .right-content {
+    margin-bottom: 50px;
+  }
+  .contact-us .contact-us-content .left-content .form label {
+    font-size: 16px;
+  }
+  .contact-us .contact-us-content .left-content input::placeholder {
+    font-size: 16px;
+  }
+  .contact-us .contact-us-content .left-content .form .row .row-c {
+    align-items: center;
   }
 }
 
@@ -1245,6 +1457,9 @@ ul {
     width: 87.1%;
     font-size: 16px;
   }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 418px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1294,6 +1509,12 @@ ul {
   }
   .customer-says .customer-says-content .bottom .middle h5 {
     font-size: 20px;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 409px;
+  }
+  .contact-us .contact-us-content .left-content .form {
+    width: 100%;
   }
 }
 
@@ -1361,6 +1582,9 @@ ul {
   }
   .customer-says .customer-says-content .bottom .cursor {
     width: 45px;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 100%;
   }
 }
 
@@ -1461,6 +1685,19 @@ ul {
   .customer-says .customer-says-content .top h2 {
     font-size: 32px;
   }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 339px;
+  }
+  .contact-us .contact-us-content .left-content .form .row .row-c input::placeholder {
+    font-size: 13px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    right: -13px;
+    bottom: 4px;
+  }
+  .contact-us .contact-us-content .right-content .img-1 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1487,6 +1724,18 @@ ul {
   }
   .customer-says .customer-says-content .top h2 {
     font-size: 29px;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 308px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    right: -3px;
+    bottom: 3px;
+    width: 57%;
+  }
+  .contact-us .contact-us-content .right-content .text p {
+    font-size: 13px;
+    margin-left: 11px;
   }
 }
 
@@ -1560,6 +1809,19 @@ ul {
   .customer-says .customer-says-content .bottom .cursor {
     width: 40px;
   }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 296px;
+  }
+  .contact-us .contact-us-content .left-content .form .row .row-c input::placeholder {
+    font-size: 12px;
+  }
+  .contact-us .contact-us-content .right-content .text {
+    right: -4px;
+    bottom: 3px;
+  }
+  .contact-us .contact-us-content .right-content .text p {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1616,6 +1878,12 @@ ul {
   .customer-says .customer-says-content .top h2 {
     font-size: 25px;
   }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 268px;
+  }
+  .contact-us .contact-us-content .left-content .form .row .row-c input::placeholder {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -1647,5 +1915,8 @@ ul {
     grid-column-end: 22;
     grid-row-start: 14;
     grid-row-end: 28;
+  }
+  .contact-us .contact-us-content .left-content .form textarea {
+    width: 269px;
   }
 }
