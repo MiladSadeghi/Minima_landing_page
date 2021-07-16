@@ -28,38 +28,39 @@
   <a href="https://github.com/MiladSadeghi" target="_blank">Author</a>
 </p>
 
-<br>
+<br><br>
 
 ## :dart: About ##
 
 A minimal landing page for social media agency. Replicated a landing page design from Figma.
-
+<br><br>
 ## :sparkles: Features ##
 
 :heavy_check_mark: Full Responsive;\
 :heavy_check_mark: No JS (Very little used for the menu);\
 :heavy_check_mark: Good for training ;
+<br><br>
+## :checkered_flag: Using the Template ##
 
-## :checkered_flag: Contributing ##
+* Fork and Clone the repository
 
-```bash
-# Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/15-tailwind
+  ```bash 
+  $ git clone https://github.com/MiladSadeghi/Minima_landing_page.git
+  ```
+* Go inside the main repository
 
-# Access
-$ cd 15-tailwind
+  ```bash 
+  cd Minima_landing_page
+  ```
 
-# Install dependencies
-$ yarn
+* Modify index.html to change the names and links.
 
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
-```
+* Upload to Your host.
+<br><br>
 
 ## :memo: License ##
 
 Made with :heart: by <a href="https://github.com/MiladSadeghi" target="_blank">MiladSadeghi</a>
 
 <a href="#top">Back to top</a>
+<br><br><br><br>
