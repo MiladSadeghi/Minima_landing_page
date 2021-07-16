@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <title>Minima</title>
   </head>
   <body>
@@ -47,7 +46,7 @@
               <div class="bottom">
                 <div class="bottom-top">
                   <h5>Also trusted by</h5>
-                  <i class="fal fa-long-arrow-right"></i>
+                  <i class="fas fa-long-arrow-alt-right size"></i>
                 </div>
                 <div class="bottom-bottom">
                   <img class="first" src="images/google-logo.jpg" alt="Google" /> <img class="second" src="images/microsoft-logo.jpg" alt="Microsfot" /> <img class="third" src="images/oyo-logo.jpg" alt="OYO" />
@@ -230,12 +229,12 @@
                 </div>
                 <div class="row-c">
                   <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="fname" placeholder="Enter your last name">
+                  <input type="text" id="lname" name="lname" placeholder="Enter your last name">
                 </div>
               </div>
 
               <label class="color" for="email">Your Email</label>
-              <input class="input-sec" type="email" id="email" name="fname" placeholder="Enter your email">
+              <input class="input-sec" type="email" id="email" name="email" placeholder="Enter your email">
 
               <label class="color" for="message">Message</label>
               <textarea name="msg" id="message" placeholder="Enter your message"></textarea>
@@ -248,12 +247,48 @@
             <img class="img-2" src="images/Dot-Ornament.png" alt="">
             <div class="text">
               <img src="images/map-icon.png" alt="">
-              <p>8819 Ohio St. South Gate, CA 90280 </p>
+              <p>8819 Ohio St. South Gate, CA 90280</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo-title">
+            <img src="images/logo-white.png" alt="">
+            <p>Minima is a boutique social media agency that offers full-service social media solutions.</p>
+          </div>
+          <div class="get-in-touch">
+            <h4>Get in Touch</h4>
+            <span class="mrg">
+              <img src="images/email-icon.png" alt="">
+              <p>yourmail@hello.com</p>
+            </span>
+            <span>
+              <img src="images/phone-icon.png" alt="">
+              <p>+1 386-688-3295</p>
+            </span>
+          </div>
+          <div class="social-media">
+            <h4>Social Media</h4>
+            <div>
+              <a href="#"><img src="images/instagram.png" alt=""></a>
+              <a href="#"><img class="mrg" src="images/twitter.png" alt=""></a>
+              <a href="#"><img src="images/facebook.png" alt=""></a>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h4>Join a Newsletter</h4>
+            <label for="email-sec">Your Email</label>
+            <input class="test" type="email" id="email-sec" name="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>
