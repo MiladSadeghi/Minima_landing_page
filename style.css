@@ -1527,7 +1527,7 @@ footer .footer-content .newsletter button {
     position: absolute;
     justify-content: center;
     left: 45%;
-    top: 80px;
+    top: 89px;
     width: 90%;
     border: 1px solid #000;
     transform: translateX(-50%);
@@ -1808,6 +1808,11 @@ footer .footer-content .newsletter button {
   footer .footer-content .social-media {
     margin-top: 50px;
   }
+  .nav .list {
+    left: 42%;
+    top: 90px;
+    width: 90%;
+}
 }
 
 @media only screen and (max-width: 400px) {
@@ -1818,7 +1823,7 @@ footer .footer-content .newsletter button {
     width: 320px;
   }
   .nav .list {
-    left: 43%;
+    left: 42%;
     top: 90px;
     width: 90%;
   }
@@ -1966,7 +1971,7 @@ footer .footer-content .newsletter button {
     width: 310px;
   }
   .nav .list {
-    left: 42%;
+    left: 39.9%;
     top: 90px;
     width: 90%;
   }
