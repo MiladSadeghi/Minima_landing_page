@@ -25,7 +25,8 @@
   <a href="#dart-about" id="dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features" id="sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting" id="checkered_flag-starting">Using</a> &#xa0; | &#xa0;
-  <a href="https://github.com/MiladSadeghi" target="_blank">Author</a>
+  <a href="https://github.com/MiladSadeghi" target="_blank">Author</a> &#xa0; | &#xa0;
+  <a href="https://miladsadeghi.github.io/Minima_landing_page/" target="_blank">DEMO</a>
 </p>
 
 <br><br>
