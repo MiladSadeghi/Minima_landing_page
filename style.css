@@ -336,11 +336,15 @@ ul {
 .about-us .about-us-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 
 .about-us .about-us-content .content-left {
   width: 80%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .about-us .about-us-content .content-left img {
@@ -350,8 +354,10 @@ ul {
 .about-us .about-us-content .content-right {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 64%;
   margin-top: 30px;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .about-us .about-us-content .content-right h2 {
@@ -374,12 +380,12 @@ ul {
   font-size: 16px;
   line-height: 31px;
   font-weight: 400;
-  width: 70%;
+  width: 100%;
 }
 
 .about-us .about-us-content .content-right h4:nth-child(3) {
   margin: 20px 0;
-  width: 66%;
+  width: 100%;
 }
 
 .about-us .about-us-content .content-right h4 span {
@@ -554,6 +560,17 @@ ul {
 .our-success .our-success-content .content-right h2 {
   font-size: 40px;
   font-weight: 700;
+  position: relative;
+}
+
+.our-success .our-success-content .content-right h2::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  left: 0;
+  bottom: -9px;
+  background: #dedede;
 }
 
 .our-success .our-success-content .content-right p {
@@ -1224,6 +1241,7 @@ footer .footer-content .newsletter button {
   .about-us .about-us-content .rectangle {
     width: 367px;
     height: 250px;
+    top: 28px;
   }
   .service .content {
     flex-direction: column;
@@ -1350,6 +1368,9 @@ footer .footer-content .newsletter button {
   .hero .hero-content .hero-content-photo {
     width: auto;
   }
+  .about-us .about-us-content .content-right {
+    width: 100%;
+  }
   .about-us .about-us-content .content-right h2 {
     margin-bottom: 29px;
   }
@@ -1372,7 +1393,7 @@ footer .footer-content .newsletter button {
   .about-us .about-us-content .rectangle {
     width: 339px;
     height: 203px;
-    top: 26px;
+    top: 34px;
   }
   .dot {
     top: 3px;
@@ -1561,6 +1582,10 @@ footer .footer-content .newsletter button {
   .about-us .about-us-content .content-left {
     justify-content: center;
     display: flex;
+  }.about-us .about-us-content .content-right {
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .about-us .about-us-content .content-right h4 {
     font-size: 18px;
