@@ -34,6 +34,7 @@
 
 A minimal landing page for social media agency. Replicated a landing page design from Figma.
 <br><br>
+<a href="https://www.figma.com/file/dxEJjmG7EMftjqfnw9FgfU/Minima-Landing-Page-Community" target="_blank">Project Link</a>
 ## :sparkles: Features ##
 
 :heavy_check_mark: Full Responsive;\
